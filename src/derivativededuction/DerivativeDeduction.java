@@ -20,9 +20,11 @@ public class DerivativeDeduction {
         // TODO code application logic here
     
         Forward f = new Forward();
-        System.out.println(f.calculateExpansionsNumber(2, 3));
+        int derivative = 2;
+        int error = 2;
+        int expansionsNumber = f.calculateExpansionsNumber(derivative, error);
         
-        
+        f.generateSeries(expansionsNumber, derivative + error);
                 
     }
     
