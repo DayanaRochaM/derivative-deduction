@@ -22,10 +22,10 @@ public class DerivativeDeduction {
         Forward f = new Forward();
         int derivative = 2;
         int error = 2;
-        int expansionsNumber = f.calculateExpansionsNumber(derivative, error);
+        int expansionsNumber = f.calculateSeriesNumber(derivative, error);
         
         f.generateSeries(expansionsNumber, derivative + error);
-                
+        f.calculateAlphas();
     }
     
 }
